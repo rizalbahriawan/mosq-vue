@@ -5,7 +5,8 @@ const md = new MarkdownIt()
 
 export function useAnnouncements() {
   const modules = import.meta.glob('/content/announcements/*.md', {
-    as: 'raw',
+    query: '?raw',
+    import: 'default',
     eager: true,
   })
 
