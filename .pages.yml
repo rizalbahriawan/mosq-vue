@@ -13,6 +13,12 @@ content:
       - name: body
         label: Content
         type: rich-text
+      - name: speaker
+        label: Speaker
+        type: string
+      - name: place
+        label: Place
+        type: string
       - name: image
         label: Image
         type: image
