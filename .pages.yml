@@ -1,15 +1,6 @@
 media:
   input: public/uploads
   output: /uploads
-components:
-  category:
-    type: object
-    label: Category
-    fields:
-      - name: title
-        type: string
-      - name: description
-        type: text
 content:
   - name: announcements
     label: Announcements
@@ -42,3 +33,34 @@ content:
       - name: description
         label: Description
         type: text
+  - name: information
+    label: Informations
+    type: collection
+    path: content/informations
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: body
+        label: Content
+        type: rich-text
+        required: true
+      - name: place
+        label: Place
+        type: string
+      - name: category
+        label: Category
+        type: string
+      - name: gallery
+        label: Gallery
+        type: image
+        options:
+          multiple:
+            max: 6
+          unique: true
+          extensions: [jpg, png]
+          rename: true
+      - name: date
+        label: Date
+        type: date
