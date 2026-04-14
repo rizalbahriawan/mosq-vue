@@ -19,6 +19,9 @@ content:
       - name: place
         label: Place
         type: string
+      - name: category
+        label: Category
+        type: string
       - name: image
         label: Image
         type: image
