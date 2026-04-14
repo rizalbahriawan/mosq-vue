@@ -1,6 +1,15 @@
 media:
   input: public/uploads
   output: /uploads
+components:
+  category:
+    type: object
+    label: Category
+    fields:
+      - name: title
+        type: string
+      - name: description
+        type: text
 content:
   - name: announcements
     label: Announcements
@@ -10,9 +19,11 @@ content:
       - name: title
         label: Title
         type: string
+        required: true
       - name: body
         label: Content
         type: rich-text
+        required: true
       - name: speaker
         label: Speaker
         type: string
@@ -28,3 +39,6 @@ content:
       - name: date
         label: Date
         type: date
+      - name: description
+        label: Description
+        type: text
