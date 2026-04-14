@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@mdi/font": "^7.4.47",
+    "@supabase/supabase-js": "^2.103.0",
     "front-matter": "^4.0.2",
     "gray-matter": "^4.0.3",
     "markdown-it": "^14.1.1",

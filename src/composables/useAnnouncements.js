@@ -16,6 +16,10 @@ export function useAnnouncements() {
     return {
       title: parsed.attributes.title,
       date: parsed.attributes.date,
+      speaker: parsed.attributes.speaker || '',
+      place: parsed.attributes.place || '',
+      category: parsed.attributes.category || '',
+      description: parsed.attributes.description || '',
       image: parsed.attributes.image || '',
       body: md.render(parsed.body),
       slug: path.split('/').pop().replace('.md', ''),
