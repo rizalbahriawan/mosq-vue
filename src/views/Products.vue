@@ -1,8 +1,8 @@
 <template>
     <v-container>
-        <h1>Products</h1>
+        <!-- <h1>on Progress</h1> -->
 
-        <v-card
+        <!-- <v-card
         v-for="p in products"
         :key="p.id"
         class="mb-4"
@@ -16,14 +16,14 @@
             </v-card-subtitle>
 
             <v-card-text v-html="p.content"></v-card-text>
-        </v-card>
+        </v-card> -->
 
     </v-container>
 </template>
 
 <script setup>
 import { ref, onMounted } from 'vue'
-import { supabase } from '@/lib/supabaseClient'
+// import { supabase } from '@/lib/supabaseClient'
 
 const products = ref([])
 
@@ -33,7 +33,7 @@ async function getProducts() {
 }
 
 onMounted(() => {
-   getProducts()
+//    getProducts()
 })
 
 function formatDate(date) {
